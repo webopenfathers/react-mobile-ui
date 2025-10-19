@@ -1,0 +1,44 @@
+$class-prefix-nav-bar: 'ygm-nav-bar';
+
+.#{$class-prefix-nav-bar} {
+  --nav-bar-height: 45px;
+  --border-bottom: none;
+
+  height: var(--nav-bar-height);
+  border-bottom: var(--border-bottom);
+  padding: 0 var(--ygm-padding-l);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  background-color: var(--ygm-color-background);
+  box-sizing: border-box;
+
+  &-left,
+  &-right {
+    flex: 1;
+  }
+
+  &-title {
+    flex: auto;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: var(--ygm-font-size-l);
+  }
+
+  &-left {
+    font-size: var(--ygm-font-size-m);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &-icon {
+      font-size: var(--ygm-font-size-xl);
+      margin-right: 4px;
+    }
+  }
+
+  &-right {
+    text-align: right;
+  }
+}

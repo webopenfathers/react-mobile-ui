@@ -1,0 +1,54 @@
+$class-prefix-toast: 'ygm-toast';
+
+.#{$class-prefix-toast} {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  z-index: 1001;
+
+  &-main {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    min-width: 96px;
+    max-width: 70%;
+    max-height: 70%;
+    overflow: auto;
+    color: var(--ygm-color-white);
+    word-break: break-all;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: var(--ygm-radius-m);
+    pointer-events: all;
+    font-size: var(--ygm-font-size-m);
+    line-height: 1.5;
+    box-sizing: border-box;
+
+    &-icon {
+      padding: 30px 35px;
+    }
+
+    &-text {
+      padding: var(--ygm-padding-m);
+    }
+  }
+
+  &-text {
+    text-align: center;
+  }
+
+  &-icon {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 36px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

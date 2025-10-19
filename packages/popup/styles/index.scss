@@ -1,0 +1,38 @@
+$class-prefix-popup: 'ygm-popup';
+
+.#{$class-prefix-popup} {
+  --z-index: 1000;
+
+  z-index: var(--z-index);
+  position: fixed;
+  background-color: var(--ygm-color-background);
+
+  &-body {
+    position: fixed;
+    background-color: var(--ygm-color-white);
+    z-index: calc(var(--z-index) + 10);
+  }
+
+  &-left {
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &-bottom {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  &-top {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &-right {
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+}

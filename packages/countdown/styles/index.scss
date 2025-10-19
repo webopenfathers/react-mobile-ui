@@ -1,0 +1,13 @@
+$class-prefix-countdown: 'ygm-countdown';
+
+.#{$class-prefix-countdown} {
+  display: flex;
+  align-items: center;
+  font-size: var(--ygm-font-size-m);
+
+  &-item {
+    display: flex;
+    align-items: center;
+    font-size: var(--ygm-font-size-s);
+  }
+}

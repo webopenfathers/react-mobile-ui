@@ -1,0 +1,43 @@
+$class-prefix-sidebar: 'ygm-sidebar';
+
+.#{$class-prefix-sidebar} {
+  --height: 100%;
+  --width: 80px;
+  --content-padding: 0;
+  --sidebar-item-padding: 16px 5px;
+  --item-border-radius: var(--ygm-radius-m);
+  --background-color: var(--ygm-color-box);
+
+  height: var(--height);
+  font-size: var(--ygm-font-size-m);
+  display: flex;
+
+  &-items {
+    width: var(--width);
+    box-sizing: border-box;
+    overflow-y: auto;
+    background-color: var(--background-color);
+  }
+
+  &-content {
+    flex: 1;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: var(--ygm-color-white);
+    padding: var(--content-padding);
+  }
+
+  &-item {
+    width: 100%;
+    box-sizing: border-box;
+    padding: var(--sidebar-item-padding);
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+
+    &-active {
+      background-color: var(--ygm-color-white);
+      position: relative;
+    }
+  }
+}
