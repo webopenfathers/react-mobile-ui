@@ -1,5 +1,5 @@
 node_modules
-esm
+es
 cjs
 lib
 .idea/
