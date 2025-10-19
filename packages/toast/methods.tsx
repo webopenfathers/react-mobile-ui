@@ -26,5 +26,6 @@ export const show = (p: ToastShowProps | string) => {
   };
 
   // 渲染
+  {/* @ts-ignore */ }
   root.render(<Toast {...props} unmount={unmount} />);
 };

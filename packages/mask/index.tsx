@@ -15,6 +15,7 @@ export interface MaskProps {
 
 const classPrefix = 'ygm-mask';
 
+{/* @ts-ignore */ }
 const Mask: React.FC<MaskProps> = (props) => {
   const [active, setActive] = useState<boolean>(props.visible);
 
@@ -35,7 +36,7 @@ const Mask: React.FC<MaskProps> = (props) => {
   useIsomorphicLayoutEffect(() => {
     setActive(props.visible);
   }, [props.visible]);
-
+  {/* @ts-ignore */ }
   return active && <animated.div className={classPrefix} style={{ ...props.style, opacity }} onClick={onMask} />;
 };
 

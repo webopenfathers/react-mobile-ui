@@ -1,3 +1,4 @@
+import React from "react";
 const ErrorImage = (
   <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
     <defs>

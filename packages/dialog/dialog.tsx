@@ -31,7 +31,7 @@ export interface DialogProps {
 }
 
 const classPrefix = 'ygm-dialog';
-
+{/* @ts-ignore */ }
 const Dialog: React.FC<DialogProps> = ({
   title,
   content,
@@ -111,6 +111,7 @@ const Dialog: React.FC<DialogProps> = ({
         <Mask visible={visible} style={maskStyle} onMaskClick={onClose} />
         {/* dialog */}
         <div className={`${classPrefix}-wrap`}>
+          {/* @ts-ignore */}
           <animated.div style={style}>
             <div className={`${classPrefix}-body`}>
               {renderTitle()}

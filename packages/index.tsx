@@ -86,3 +86,6 @@ export type { DialogProps } from '@/dialog';
 // slider组件
 export { default as Slider } from '@/slider';
 export type { SliderProps } from '@/slider';
+
+
+export { default as hooks } from '@/hooks';

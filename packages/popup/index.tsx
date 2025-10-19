@@ -61,6 +61,7 @@ const Popup: React.FC<PopupProps> = ({
     <div className={classPrefix}>
       {/* 蒙层遮罩 */}
       {mask && <Mask visible={visible} onMaskClick={onMaskClick} />}
+      {/* @ts-ignore */}
       <animated.div
         className={cx(`${classPrefix}-body`, `${classPrefix}-${position}`, className)}
         style={{
