@@ -1,5 +1,5 @@
 {
-  "name": "react-mobile-base-ui",
+  "name": "react-mobile-ui",
   "version": "1.0.0",
   "description": "A react mobile components lib",
   "main": "lib/index.js",

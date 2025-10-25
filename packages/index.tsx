@@ -2,6 +2,7 @@
 // 从 ./spinner-loading 文件中导入默认导出（default）
 // 将其作为具名导出重新导出，名称为 SpinnerLoading
 // 其他模块可通过 import { SpinnerLoading } from '该模块路径' 引用
+import './styles/index.scss';
 
 //loading 组件
 export { default as SpinnerLoading } from './spinner-loading';
